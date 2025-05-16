@@ -78,7 +78,7 @@ nav li a:hover{
   margin-top: -240px;
 }
 .product .content{
-  background-color: var(--white-color);
+  background-color: blue;
   padding: var(--space);
   box-shadow: var(--box);
 }
@@ -104,8 +104,22 @@ nav li a:hover{
 .frases {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  background-color: green;
 }
 
 .frase {
-  
+  padding: var(--space);
+}
+
+.content_frase {
+  background-color: red;
+  margin: 200px 10px 200px 10px;
+  padding: var(--space);
+  text-align: center;
+}
+
+.img_frase {
+  text-align: center;
+  background-color: aqua;
 }
