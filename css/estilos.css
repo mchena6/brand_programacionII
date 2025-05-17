@@ -123,3 +123,25 @@ nav li a:hover{
   text-align: center;
   background-color: aqua;
 }
+
+.content_box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: aquamarine;
+}
+
+.img_box{
+  width: 250px;
+  margin: 0;
+}
+
+.box {
+  width: 250px;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: var(--normal);
+  box-shadow: -5px, -1px, -5px, -1px;
+  background-color: beige;
+
+}
