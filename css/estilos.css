@@ -124,24 +124,28 @@ nav li a:hover{
   background-color: aqua;
 }
 
-.content_box{
+.conteiner_mentions{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 20px;
   flex-wrap: wrap;
   background-color: aquamarine;
 }
 
-.img_box{
-  width: 250px;
-  margin: 0;
-}
-
-.box {
-  width: 250px;
-  height: 200px;
-  margin-top: 20px;
-  border-radius: var(--normal);
-  box-shadow: -5px, -1px, -5px, -1px;
+.mentions {
+  width: 240px;
+  height: 220px;
+  margin: 50px;
+  box-shadow: var(--box);
   background-color: beige;
 
+}
+
+.img_mentions{
+  margin: 0%;
+  padding: 0%;
+}
+
+.subtitle{
+  padding: 5%;
 }
