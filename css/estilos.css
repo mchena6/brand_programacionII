@@ -12,16 +12,21 @@
 --green-color:#7ACC2D;
 --white-color:white;
 --black-color:#313337;
+--grey-color:#c0c0c0;
 /* Tipografía */
 --normal:12px;
 /* Espaciado */
 --space:10px;
 /* Box shadow */
 --box:0px 0 2px 1px #e6e5e9;
+--box-black: 1px 1px 35px 4px rgba(0,0,0,0.75);
 }
 
 /* -------------Variables */
 html,body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   padding:0px;
   margin:0px;
   font-size: var(--normal);
@@ -71,6 +76,8 @@ nav li a:hover{
   background-position: center top;
   padding:20%;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .product{
@@ -78,7 +85,7 @@ nav li a:hover{
   margin-top: -240px;
 }
 .product .content{
-  background-color: blue;
+  background-color: var(--white-color);
   padding: var(--space);
   box-shadow: var(--box);
 }
@@ -105,47 +112,109 @@ nav li a:hover{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: green;
+  background-color: var(--white-color);
+  margin-bottom: 100px;
 }
 
 .frase {
-  padding: var(--space);
+  background-color: var(--white-color);
 }
 
 .content_frase {
-  background-color: red;
-  margin: 200px 10px 200px 10px;
-  padding: var(--space);
+  background-color: var(--white-color);
+  width: 75%;
+  margin: 15%;
   text-align: center;
 }
 
 .img_frase {
   text-align: center;
-  background-color: aqua;
+  background-color: var(--white-color);
+  position: static;
+  height: 50%;
+  width: 50%;
+  
+}
+
+/* CORRECCION
+.img_frase img {
+  position: static;
+  height: 50%;
+  width: 50%;
+  align-items: center;
+}
+  */
+
+.divisor {
+  width: 100%;
+  height: 0.7px;
+  background-color: var(--grey-color);
 }
 
 .conteiner_mentions{
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 0px;
   flex-wrap: wrap;
-  background-color: aquamarine;
+  background-color: var(--white-color);
+  
 }
 
 .mentions {
-  width: 240px;
-  height: 220px;
-  margin: 50px;
-  box-shadow: var(--box);
-  background-color: beige;
-
+  width: 20%;
+  height: 25%;
+  margin: 25px;
+  background-color: var(-color-white-);
+  box-shadow: var(--box-black);
 }
 
-.img_mentions{
+.mentions h2{
+  margin: 4%;
+}
+
+.mentions p{
+  margin: 4%;
+  margin-bottom: 5%;
+}
+
+.mentions img {
   margin: 0%;
   padding: 0%;
+  width: 100%;
+  height: 50%;
+
 }
 
 .subtitle{
   padding: 5%;
+}
+
+.faq {
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.tyc {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+}
+
+footer{
+  bottom: 0;
+  left: 0;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: 5%;
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--white-color);
 }
