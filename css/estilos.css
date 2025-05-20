@@ -133,7 +133,8 @@ nav li a:hover{
 
 .content_frase img {
   position: static;
-  height: 150px;
+  height: 100px;
+  width: auto;
 }
 
 
